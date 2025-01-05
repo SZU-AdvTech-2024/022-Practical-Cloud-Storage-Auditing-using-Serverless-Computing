@@ -1,0 +1,10 @@
+@article{REPO022,
+    author = "Chen, Fei and Cai, Jianquan and Xiang, Tao and Liao, Xiaofeng",
+    journal = "Science China Information Sciences",
+    number = "3",
+    pages = "132102",
+    publisher = "Springer",
+    title = "{Practical cloud storage auditing using serverless computing}",
+    volume = "67",
+    year = "2024"
+}
