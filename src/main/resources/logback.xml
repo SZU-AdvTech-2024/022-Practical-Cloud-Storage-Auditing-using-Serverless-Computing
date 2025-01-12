@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- 控制根日志级别 -->
+    <root level="INFO">
+        <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder>
+                <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            </encoder>
+        </appender>
+    </root>
+
+    <!-- 控制 Netty 和 Reactor 的日志级别 -->
+    <logger name="io.netty" level="ERROR" />
+    <logger name="reactor.netty" level="ERROR" />
+    <!-- 将 com.azure.core.implementation.jackson.JacksonVersion 的日志级别设为 ERROR -->
+    <logger name="com.azure.core.implementation.jackson.JacksonVersion" level="ERROR"/>
+</configuration>
